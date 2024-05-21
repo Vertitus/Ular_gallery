@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+.header {
+    font-family: 'Montserrat';font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+a {
+    text-decoration: none; /* Убрать подчеркивание */
+    color: inherit;
+  }
+  
+  a:hover {
+    text-decoration: none; /* Убрать подчеркивание при наведении */
+  }
+
+.home_page_info {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    font-family: 'Montserrat';font-size: 22px;
+    margin-top: 60px;
+    margin-right: 10%;
+    margin-bottom: 60px;
+}
+
+.image_main {
+    width: 100%; /* Занимает всю доступную ширину */
+    overflow-x: hidden;
+    border-radius: 25px;
+}
+
+
+.Footer {
+    background-color: #566E78;
+    margin-bottom: 0%;
+
+}
+
+.header-buttons {
+    margin-top: 20px;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.main-page-image {
+    margin-top: 30px;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), transparent 50%);
+    pointer-events: none; /* Это предотвращает кликабельность градиента */
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 20px; /* Отступ от нижнего края */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center; /* Центрирование текста */
+    opacity: 50%;
+}
+
+.second-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    font-family: 'Montserrat';font-size: 22px;
+    margin-top: 60px;
+    margin-right: 10%;
+    margin-bottom: 60px;
+}
+
+footer {
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+.map {
+    margin-top: 50px;
+}
+
+
+.social-links img {
+    width: 40px; /* Устанавливаем фиксированную ширину для иконок */
+    height: 40px; /* Устанавливаем фиксированную высоту для иконок */ 
+    margin: 5px;
+}

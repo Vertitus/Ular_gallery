@@ -1,0 +1,7 @@
+    {% for artwork in artworks %}
+        {{ artwork.name }}
+        {{ artwork.size }}
+        {{ artwork.materials }}
+        <img src="{{ artwork.painting.url }}" alt="" class="rounded img-fluid mx-auto d-block">
+        {{ artwork.author }}
+    {% endfor %}

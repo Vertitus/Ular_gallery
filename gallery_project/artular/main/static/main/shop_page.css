@@ -1,0 +1,183 @@
+    * {
+        margin: 0;
+        padding: 0;
+        }
+
+    .header {
+        font-family: 'Montserrat';font-size: 22px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .home_page_info {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 10%;
+        font-family: 'Montserrat';font-size: 22px;
+        margin-top: 60px;
+        margin-right: 10%;
+    }
+
+    .image_main {
+        width: 100%; /* Занимает всю доступную ширину */
+        overflow-x: hidden;
+        border-radius: 25px;
+    }
+
+
+    .Footer {
+        background-color: #566E78;
+        margin-bottom: 0%;
+
+    }
+
+    .header-buttons {
+        margin-top: 20px;
+    }
+
+    a {
+        text-decoration: none; /* Убрать подчеркивание */
+        color: inherit;
+    }
+    
+    a:hover {
+        text-decoration: none; /* Убрать подчеркивание при наведении */
+    }
+
+
+
+
+    footer {
+        position: static;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .square-image-container {
+        position: relative;
+        padding-bottom: 100%; /* Высота контейнера равна ширине (делаем квадрат) */
+        overflow: hidden;
+    }
+
+    /* Стили для квадратного изображения */
+    .square-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Занимает всю ширину контейнера */
+        height: 100%; /* Занимает всю высоту контейнера */
+        object-fit: cover; /* Изображение заполняет контейнер без искажений */
+    }
+
+    .square-image-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .artwork-name {
+
+        position: absolute;
+        top: 50%; /* располагаем текст по вертикали по центру */
+        left: 50%; /* располагаем текст по горизонтали по центру */
+        transform: translate(-50%, -50%); /* смещаем текст обратно на половину его размеров */
+        color: rgb(223, 223, 223); /* цвет текста */
+        font-size: 20px; /* размер шрифта */
+        font-weight: lighter; /* жирный текст */
+        text-align: center; /* выравнивание текста по центру */
+        pointer-events: none; /* текст не должен быть кликабельным */
+        z-index: 1; /* чтобы текст был поверх изображения */
+
+    }
+
+
+    .gradient-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+        pointer-events: none; /* Чтобы клики проходили сквозь псевдоэлемент */
+    }
+
+    .shop_page_pictures {
+        margin-top: 50px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 60px;
+    }
+
+    .shop_element {
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    /* Стили для модального окна */
+    .modal {
+        display: none; /* По умолчанию скрыто */
+        position: fixed;
+        left: 50%; /* Располагаем модальное окно по горизонтали по центру */
+        top: 50%; /* Располагаем модальное окно по вертикали по центру */
+        transform: translate(-50%, -50%); /* Центрируем модальное окно */
+        background-color: #ffffff; /* Белый фон модального окна */
+        border-radius: 10px; /* Закругляем углы модального окна */
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Тень для модального окна */
+        overflow-y: auto; /* Скрытие содержимого, выходящего за границы модального окна */
+        width: 1000px; /* Ширина модального окна подстраивается под содержимое */
+        text-align: center;
+        height: 100vh;
+    }
+
+    .modal-contact-link {
+        margin-top: 20px;
+        font-weight: lighter;
+    }
+
+
+    /* Стили для изображения в модальном окне */
+    .modal-image {
+        display: block;
+        margin: 0 auto; /* Центрируем изображение внутри модального окна */
+        max-width: 100%; /* Максимальная ширина изображения равна ширине содержимого */
+        height: auto; /* Автоматическая высота для сохранения пропорций изображения */
+    }
+
+    /* Стили для кнопки закрытия модального окна */
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        cursor: pointer;
+        transition: color 1.2s ease; /* Анимация изменения цвета при наведении */
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #999; /* Цвет при наведении курсора */
+        text-decoration: none;
+    }
+
+    .modal-image-name {
+        margin-top: 20px; /* Отступ сверху для выравнивания */
+    }
+
+
+
+
+    .social-links img {
+        width: 40px; /* Устанавливаем фиксированную ширину для иконок */
+        height: 40px; /* Устанавливаем фиксированную высоту для иконок */ 
+        margin: 5px;
+    }
